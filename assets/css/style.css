@@ -7,6 +7,7 @@
 
 body{
   background-color: #172a38;
+  
 }
 
 h1{
@@ -16,4 +17,13 @@ h1{
   justify-content: center;
   margin-top: 2em;
   letter-spacing: 5px;
+}
+
+.container{
+  width: 400px;
+  height: 350px;
+  border: 1px solid #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
