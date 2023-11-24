@@ -4,3 +4,5 @@ function iniciarTime(){
     document.getElementById('tempo').innerHTML = x;
   }, 1000);
 }
+
+const time = document.getElementById("tempo").innerHTML = '12:12';
