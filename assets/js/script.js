@@ -1,8 +1,11 @@
-function iniciarTime(){
-  setTimeout(function(){
-    let x = new Date().toLocaleString();
-    document.getElementById('tempo').innerHTML = x;
-  }, 1000);
-}
+let hh = 0;
+let mm = 0;
+let ss = 0;
 
-const time = document.getElementById("tempo").innerHTML = '12:12';
+let tempo = 1000;
+
+let cron;
+
+function iniciar(){
+  
+}
