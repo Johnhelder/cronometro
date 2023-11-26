@@ -7,5 +7,9 @@ let tempo = 1000;
 let cron;
 
 function iniciar(){
-  
+  cron = setInterval(() => {timer();}, tempo);
+}
+
+function timer(){
+  document.getElementById("tempos").innerHTML = '123';
 }
