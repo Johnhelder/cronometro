@@ -1,15 +1,12 @@
 let hh = 0;
 let mm = 0;
-let ss = 0;
+let ss = 0; 
 
-let tempo = 1000;
-
-let cron;
-
-function iniciar(){
-  cron = setInterval(() => {timer();}, tempo);
+function start(){
+  setInterval(timer, 1000) 
 }
 
 function timer(){
-  document.getElementById("tempos").innerHTML = '123';
+  ss++;
+  document.getElementById("tempos").innerHTML = ss;
 }
