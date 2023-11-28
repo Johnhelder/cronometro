@@ -1,6 +1,6 @@
 let hh = 0;
 let mm = 0;
-let ss = 0; 
+let ss = 55; 
 
 function start(){
   setInterval(timer, 1000) 
@@ -8,5 +8,9 @@ function start(){
 
 function timer(){
   ss++;
-  document.getElementById("tempos").innerHTML = ss;
+  if(ss==60){
+    mm++
+    ss=0
+  }
+  document.getElementById("tempos").innerHTML =mm +':' + ss;
 }
