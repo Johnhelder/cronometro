@@ -7,8 +7,15 @@ function start(){
   intervalo = setInterval(timer, 1000) 
 }
 
+function stop(){
+  clearInterval(intervalo)
+}
+
 function pause(){
   clearInterval(intervalo)
+  ss = 0;
+  mm = 0;
+  document.getElementById("tempos").innerHTML = '00:00';
 }
 
 function timer(){
