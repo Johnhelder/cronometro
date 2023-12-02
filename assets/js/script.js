@@ -1,6 +1,6 @@
 let hh = 0;
-let mm = 0;
-let ss = 0; 
+let mm = 59;
+let ss = 55; 
 let intervalo;
 
 function start(){
@@ -23,6 +23,10 @@ function timer(){
   if(ss==60){
     mm++
     ss=0
+    if(mm==60){
+      mm=0;
+      hh++
+    }
   }
-  document.getElementById("tempos").innerHTML =mm +':' + ss;
+  document.getElementById("tempos").innerHTML =hh+':'+mm +':' + ss;
 }
