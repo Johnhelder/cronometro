@@ -3,6 +3,14 @@ let mm = 59;
 let ss = 55; 
 let intervalo;
 
+function twoDigits(digit){
+  if(digit<10){
+    return('0'+digit);
+  }else{
+    return(digit);
+  }
+}
+
 function start(){
   intervalo = setInterval(timer, 1000) 
 }
@@ -28,5 +36,5 @@ function timer(){
       hh++
     }
   }
-  document.getElementById("tempos").innerHTML =hh+':'+mm +':' + ss;
+  document.getElementById("tempos").innerHTML =hh+':'+mm +':' + twoDigits(ss);
 }
