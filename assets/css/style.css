@@ -74,7 +74,7 @@ h1{
   color: #172a38;
 }
 
-.btn_reiniciar{
+.btn_pausar{
   display: block;
   padding: 12px 30px;
   background: none;
@@ -88,7 +88,7 @@ h1{
   letter-spacing: 2px;
 }
 
-.btn_reiniciar:hover{
+.btn_pausar:hover{
   display: block;
   cursor: pointer;
   background-color: white;
